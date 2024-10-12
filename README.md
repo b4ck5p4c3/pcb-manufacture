@@ -7,7 +7,7 @@ It uses FlatCAM for generating pre-GCode and Klipper for CNC control
 The process is simple in steps:
 1. Create PCB manufacture files (`.gcode`, `.drl`) in any PCB software (KiCad for example)
 2. Convert `.gcode` and `.drl` to pre-GCode files using custom preprocessors
-3. Convert pre-GCode to GCode using `convert.py`
+3. Convert pre-GCode to GCode using [convert.py](./convert.py)
 4. Apply your GCode to CNC and raw PCB material
 5. Etch PCB
 6. Remove paint using any solvent (we use IPA and ... for this)
@@ -16,12 +16,12 @@ The process is simple in steps:
 # FlatCAM
 
 For generating pre-GCode files, you need:
-- Add [flatcam/bksp_drill.py](bksp_drill.py) and [flatcam/bksp_engrave.py](bksp_engrave.py) to `lib/preprocessors` directory in your FlatCAM installation
+- Add [flatcam/bksp_drill.py](./flatcam/bksp_drill.py) and [flatcam/bksp_engrave.py](./flatcam/bksp_engrave.py) to `lib/preprocessors` directory in your FlatCAM installation
 - Use them to create drill and engraving pre-GCode files
 
 # Converting to GCode
 
-Use `convert.py` to convert resuling files to GCode
+Use [convert.py](./convert.py) to convert resuling files to GCode
 
 For our CNC installation use this command line parameters:
 ```shell
