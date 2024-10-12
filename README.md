@@ -33,7 +33,7 @@ python3 convert.py \
     --laser-feedrate 300 \
     --spindle-z-home 115 \
     --spindle-z-pre-drill 92 \
-    --spindle-z-drill 88 \
+    --spindle-z-drill 88.5 \
     --spindle-feedrate 60 \
     -l engrave.nc -d drill.nc -o output.gcode
 ```
