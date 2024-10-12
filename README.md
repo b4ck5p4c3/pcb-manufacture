@@ -30,7 +30,7 @@ python3 convert.py \
     --laser-power 255 \
     --spindle-power 127 \
     --default-speed 2400 \
-    --laser-z 71.6 \
+    --laser-z 50.0 \
     --laser-feedrate 300 \
     --spindle-z-home 115 \
     --spindle-z-pre-drill 92 \

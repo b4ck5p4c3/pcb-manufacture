@@ -1,7 +1,5 @@
 import argparse
 
-# python3 convert.py -l laser.gcode -d drill.gcode -lp 255 -sp 127 -ds 2400 -lz 71.6 -lf 300 -szh 115 -szpd 92 -szd 88.5 -sf 1 -o output.gcode
-
 parser = argparse.ArgumentParser(
                     prog='converter',
                     description='FlatCAM to gcode converter')
