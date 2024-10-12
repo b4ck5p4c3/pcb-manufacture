@@ -16,6 +16,7 @@ The process is simple in steps:
 # FlatCAM
 
 For generating pre-GCode files, you need:
+- For geometry creation use V-shaped tool with diameter of `0.12`
 - Add [flatcam/bksp_drill.py](./flatcam/bksp_drill.py) and [flatcam/bksp_engrave.py](./flatcam/bksp_engrave.py) to `lib/preprocessors` directory in your FlatCAM installation
 - Use them to create drill and engraving pre-GCode files
 
