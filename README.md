@@ -10,13 +10,13 @@ The process is simple in steps:
 3. Convert pre-GCode to GCode using [convert.py](./convert.py)
 4. Apply your GCode to CNC and raw PCB material
 5. Etch PCB
-6. Remove paint using any solvent (we use IPA and ... for this)
+6. Remove paint using any solvent (we use IPA and COSMO CL-300.130 for this)
 7. Use your PCB!
 
 # FlatCAM
 
 For generating pre-GCode files, you need:
-- For geometry creation use V-shaped tool with diameter of `0.12`
+- For geometry creation use Paint tool with V-shaped tool (diameter `0.10`, overlap `50%`, offset `0.020`)
 - Add [flatcam/bksp_drill.py](./flatcam/bksp_drill.py) and [flatcam/bksp_engrave.py](./flatcam/bksp_engrave.py) to `lib/preprocessors` directory in your FlatCAM installation
 - Use them to create drill and engraving pre-GCode files
 
@@ -28,7 +28,7 @@ For our CNC installation use this command line parameters:
 ```shell
 python3 convert.py \
     --laser-power 255 \
-    --spindle-power 127 \
+    --spindle-power 255 \
     --default-speed 2400 \
     --laser-z 50.0 \
     --laser-feedrate 300 \
