@@ -67,6 +67,8 @@ with open(args.output_file, 'w') as output:
         output.write('; start drilling\n')
         output.write('USE_SPINDLE\n')
         output.write('G0 Z%.4f F%.4f\n' % (args.spindle_z_home, args.default_speed))
+        output.write('SPINDLE_SET S=%.4f\n' % (args.spindle_power / 2))
+        output.write('G4 P5000\n')
         output.write('SPINDLE_SET S=%.4f\n' % (args.spindle_power))
         with open(args.drill_file, 'r') as drill_input:
             while True:
