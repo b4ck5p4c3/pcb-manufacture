@@ -27,7 +27,7 @@ Use [convert.py](./convert.py) to convert resuling files to GCode
 For our CNC installation use this command line parameters:
 ```shell
 python3 convert.py \
-    --laser-power 255 \
+    --laser-power 146 \
     --spindle-power 255 \
     --default-speed 2400 \
     --laser-z 50.0 \
