@@ -41,3 +41,19 @@ python3 convert.py \
     --spindle-feedrate 60 \
     -l engrave.nc -d drill.nc -o output.gcode
 ```
+
+Alternative configuration by @heeeyflo (80% overlap, 0.020mm offset, 0.10mm diameter):
+
+```shell
+python3 convert.py \
+    --laser-power 180 \
+    --spindle-power 255 \
+    --default-speed 2400 \
+    --laser-z 53.2 \
+    --laser-feedrate 300 \
+    --spindle-z-home 115 \
+    --spindle-z-pre-drill 92 \
+    --spindle-z-drill 88.5 \
+    --spindle-feedrate 60 \
+    -l engrave.nc -d drill.nc -o output.gcode
+```
