@@ -33,11 +33,11 @@ python3 convert.py \
     --laser-power 146 \
     --spindle-power 255 \
     --default-speed 2400 \
-    --laser-z 53.5 \
+    --laser-z 55.2 \
     --laser-feedrate 300 \
-    --spindle-z-home 115 \
+    --spindle-z-home 105 \
     --spindle-z-pre-drill 92 \
-    --spindle-z-drill 88.5 \
+    --spindle-z-drill 85 \
     --spindle-feedrate 60 \
     -l engrave.nc -d drill.nc -o output.gcode
 ```
@@ -49,11 +49,11 @@ python3 convert.py \
     --laser-power 180 \
     --spindle-power 255 \
     --default-speed 2400 \
-    --laser-z 53.5 \
+    --laser-z 55.2 \
     --laser-feedrate 300 \
-    --spindle-z-home 115 \
+    --spindle-z-home 105 \
     --spindle-z-pre-drill 92 \
-    --spindle-z-drill 88.5 \
+    --spindle-z-drill 85 \
     --spindle-feedrate 60 \
     -l engrave.nc -d drill.nc -o output.gcode
 ```
