@@ -1,0 +1,23 @@
+{
+  "machine": {
+    "x_size": 250,
+    "y_size": 200,
+    "laser_z": 55.2,
+    "spindle_z_home": 95,
+    "spindle_z_pre_drill": 85,
+    "spindle_z_drill": 78,
+    "move_feedrate": 2400,
+    "laser_beam_diameter": 0.1,
+    "spindle_tool_diameter": 0.6
+  },
+  "cam": {
+    "overlap": 0.8,
+    "offset": 0.02
+  },
+  "job": {
+    "laser_power": 180,
+    "spindle_power": 255,
+    "laser_feedrate": 300,
+    "spindle_feedrate": 60
+  }
+}

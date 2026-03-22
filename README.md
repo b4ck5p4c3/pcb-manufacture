@@ -2,6 +2,22 @@
 
 Homebrew PCB manufacturing solution using laser etching on painted raw copper-plated PCB
 
+The process is simple in steps:
+
+1. Create PCB manufacture files (`.gcode`, `.drl`) in any PCB software (KiCad for example)
+2. Convert `.gcode` and `.drl` to GCode files using [flatcum](https://github.com/b4ck5p4c3/flatcum) like this:
+```shell
+uvx git+https://github.com/b4ck5p4c3/flatcum [args...]
+```
+4. Apply your GCode to CNC and raw PCB material
+5. Etch PCB
+6. Remove paint using any solvent (we use IPA and COSMO CL-300.130 for this)
+7. Use your PCB!
+
+For using with our Tenlog PCB CNC, use config `configs/tenlog.json`
+
+# Old legacy way
+
 It uses FlatCAM for generating pre-GCode and Klipper for CNC control
 
 The process is simple in steps:
