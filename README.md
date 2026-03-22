@@ -16,6 +16,8 @@ uvx git+https://github.com/b4ck5p4c3/flatcum [args...]
 
 For using with our Tenlog PCB CNC, use config `configs/tenlog.json`
 
+---
+
 ### Old legacy way
 
 It uses FlatCAM for generating pre-GCode and Klipper for CNC control
